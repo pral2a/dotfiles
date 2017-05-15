@@ -81,6 +81,16 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ./brew.sh
 ```
 
+### Security recommendations
+
+Read this
+
+https://github.com/drduh/macOS-Security-and-Privacy-Guide
+
+And run this
+
+https://github.com/kristovatlas/osx-config-check
+
 ## Feedback
 
 Suggestions/improvements
