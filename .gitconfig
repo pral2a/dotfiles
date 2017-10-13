@@ -187,3 +187,11 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+	
+[gpg]
+	program = gpg
+
+[user]
+	signingkey = 186CF1E3B8C993D8
+	name = Pral2a
+	email = guillem@pral2a.com
