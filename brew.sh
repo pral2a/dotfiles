@@ -217,5 +217,11 @@ brew install webp
 brew install x264
 brew install xvid
 
+# Apps..
+# brew tap caskroom/cask
+# brew install brew-cask
+# brew tap caskroom/versions
+# brew cask install sublime-text3
+
 # Remove outdated versions from the cellar.
 brew cleanup
