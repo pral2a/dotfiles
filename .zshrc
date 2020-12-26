@@ -90,7 +90,7 @@ genpsw() { pwgen -Bs $1 1 |pbcopy |pbpaste; echo “Has been copied to clipboard
 alias serve='python -m SimpleHTTPServer 8081'
 
 # randomize mac
-alias randommac="sudo ifconfig en0 ether $(openssl rand -hex 6 | sed 's%\(..\)%\1:%g; s%.$%%') && echo 'mac randomized'"
+alias randommac="sudo ifconfig en1 ether $(openssl rand -hex 6 | sed 's%\(..\)%\1:%g; s%.$%%') && echo 'mac randomized'"
 
 # big files
 alias lsbig='find . -type f -size +150M'
@@ -104,6 +104,12 @@ alias dev="cd ~/dev/"
 
 # docker aliases
 alias doco="docker-compose"
+
+# play nice analog sessions
+alias analog='tput setaf 3; echo "Welcome to Analog Journal! \n Tip: Shift+> for next session";  mpv --no-video https://www.youtube.com/c/MyAnalogJournal'
+
+# play noise - source https://gist.github.com/rsvp/1209835
+alias noise='play --no-show-progress -c 2 --null synth 01:00 brownnoise band -n 1786 499 tremolo 0.0333333 43 reverb 19 bass -11 treble -1 vol 14dB repeat 58'
 
 # Export custom paths
 
